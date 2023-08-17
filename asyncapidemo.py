@@ -83,7 +83,7 @@ class asyncFun(Resource):
         print(args_dict)
         # 写入redis 编号为taskID的任务已完成
         print("Finished work {taskID}")
-
+        print('a')
 
 def create_app() -> Flask:
     app = Flask(__name__)
@@ -92,3 +92,5 @@ def create_app() -> Flask:
     api.add_resource(asyncFun, '/ylkj-nlp/gpt-app-documents/get-fun')
 
     return app
+
+    
